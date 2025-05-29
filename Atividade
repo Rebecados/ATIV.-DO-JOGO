@@ -1,0 +1,66 @@
+{
+  "cells": [
+    {
+      "cell_type": "code",
+      "execution_count": 5,
+      "metadata": {
+        "id": "VjYy0F2gZIPR"
+      },
+      "outputs": [],
+      "source": [
+        "class ContaCorrente:\n",
+        "\n",
+        " def _init_(self, codigo):\n",
+        "  self.codigo = codigo\n",
+        "  self.saldo = 0\n",
+        "\n",
+        " def deposita(self, valor):\n",
+        "  self.saldo += valor\n",
+        "\n",
+        " def _str_(self):\n",
+        "  return \"(>> Codigo () Saldo() <<)\", format(self.codigo, self.saldo)\n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "conta_do_gui = ContaCorrente()\n",
+        "print(conta_do_gui)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "heDCoLFKcad5",
+        "outputId": "61969429-188c-4b3d-9e32-c3ba0023ad16"
+      },
+      "execution_count": 9,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "<__main__.ContaCorrente object at 0x7ff05889ea90>\n"
+          ]
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "accelerator": "GPU",
+    "colab": {
+      "gpuType": "T4",
+      "provenance": []
+    },
+    "kernelspec": {
+      "display_name": "Python 3",
+      "name": "python3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 0
+}
